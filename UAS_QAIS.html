@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="UAS_QAIS.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+	    <a href="#" class="logo"><img src="logo.png" class="logo1"></a>
+        <ul class="header_form">
+            <li><img src="earth.png" class="logo2"></li>
+            <li><select class="bahasa">
+                <option value="" disabled selected>Intl - English</option>
+                <option value="ENG">English</option>
+                <option value="ES">Español</option>
+                <option value="ID">Bahasa Indonesia</option>
+            </select></li>
+            <li><a href="#" class="home">Homepage</a></li>
+            <li><a href="#" class="login">Login</a></li>
+        </ul>
+	</header> 
+
+    <!-- Title -->
+    <img src="bg.png" alt="" class="bg">
+    <section class="title">
+        <div class="title">
+            <br>
+            <h2>Create Your Alibaba Cloud Account</h2>
+            <p>Free Access to Over 50 Products and Up to 12 Months Usage for Elastic Compute Service!</p>
+        </div>
+    </section>
+
+    <!-- Signup Form -->
+    <div class="signup">
+        <div class="dg1">
+            <div>
+            </div>
+        </div>
+        <div class="dg2">
+            <section class="form">
+                <div class="form_bg">
+                    <div class="form_container">
+                        <div class="row">
+                                <form>
+                                    <div class="country">
+                                        <select>
+                                            <option value="AU">Australia</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="BN">Brunei Darussalam</option>
+                                            <option value="BG">Bulgaria</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="DK">Denmark</option>
+                                            <option value="EG">Egypt</option>
+                                            <option value="FI">Finland</option>
+                                            <option value="FR">France</option>
+                                            <option value="HK">Hong Kong</option>
+                                            <option value="IS">Iceland</option>
+                                            <option value="IN">India</option>
+                                            <option value="ID">Indonesia</option>
+                                            <option value="IR">Iran, Islamic Republic of</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="JM">Jamaica</option>
+                                            <option value="JP">Japan</option>
+                                            <option value="KZ">Kazakhstan</option>
+                                            <option value="KE">Kenya</option>
+                                            <option value="KP">Korea, Democratic People's Republic of</option>
+                                            <option value="KR">Korea, Republic of</option>
+                                            <option value="MG">Madagascar</option>
+                                            <option value="MY">Malaysia</option>
+                                            <option value="MM">Myanmar</option>
+                                            <option value="NP">Nepal</option>
+                                            <option value="NL">Netherlands</option>
+                                            <option value="PK">Pakistan</option>
+                                            <option value="PS">Palestinian Territory, Occupied</option>
+                                            <option value="PA">Panama</option>
+                                            <option value="PL">Poland</option>
+                                            <option value="PT">Portugal</option>
+                                            <option value="RU">Russian Federation</option>
+                                            <option value="SA">Saudi Arabia</option>
+                                            <option value="CH">Switzerland</option>
+                                            <option value="UA">Ukraine</option>
+                                            <option value="AE">United Arab Emirates</option>
+                                            <option value="GB">United Kingdom</option>
+                                            <option value="ZW">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_signup">
+                                        <div class="symbol">
+                                            <p style="color: #Ffa200; font-weight: 600;">ⓘ</p>
+                                        </div>
+                                        <div class="explain">
+                                            <p class="txt0" style="font-weight: 500"; color: #ffa200;>Country/region will be used for currency and tax purposes and cannot be changed after registration.</p>
+                                        </div>
+                                        <div class="form_input" id="email1">
+                                            <input type="text" class="form-control" id="email" placeholder="Enter your email" required onkeyup="validation()"/>
+                                            
+                                            <span id="email2"style="color: #ffa200;">Please Enter Your Email</span>
+                                        </div>
+                                        <div class="form_input" id="pw1">
+                                            <input type="password" name="password" placeholder="Enter you password" id="ps1" onkeyup="CheckPassword()"/>
+                                           
+                                            <span id="ps2" style="color: #ffa200;">Please Enter Your Password</span>
+                                        </div>
+                                        <div class="form_input" id="pw2">
+                                            <input type="password" name="password" placeholder="Confirm your password" required id="ps3" onkeyup="ConfirmPas()"/>
+                                            <span id="ps4" style="color: #ffa200;">Please Enter Your Password</span>
+                                        </div>
+                                        <div class="form_input checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span>I hereby agree to the Alibaba Cloud International Website <a href="#">Membership Agreement</a>, <a href="#">Privacy Policy</a>, <a href="#">Product Terms</a> and <a href="#">Terms of Use</a>, Under which I am contracting with Alibaba Cloud (Singapore) Private Limited</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input class="button" type="submit" value="Confirm" id="btn" onchange="cek()"/>
+                                    <div class="alr">
+                                        <p>Already a member? <a href="#" style="color: #FF6A00; text-decoration: none;">Sign In</a></p>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="description">
+            <h4>Account Benefits & Registration Tips</h4>
+            <h4>Free Trial</h4>
+            <p>Get free hands-on experience with 50+ products. Now up to 12 Months for Elastic Compute Service!</p>
+            <h4>Premium Support Services</h4>
+            <p><a href="">1-on-1 pre-sale consultation</a>, 24/7 after-sales technical support with 6 free tickets per quarter</p>
+            <h4>How do I select the country or region of my account?</h4>
+            <p>For enterprise customers, please select the account registration country/region based on your business license. If not, you may be unable to obtain the correct invoice for tax free policy, or may even unbale to pay for the invoice.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="links" id="footerLinks">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Notice List</a></li>
+            </ul>
+            <ul>
+                <li><p id="info1"><span id="info2">Alibaba Group</span> Taobao Marketplace Tmall Juhuasuan AliExpress Alibaba.com 1668 Alinam Alitrip YunOS AliTelecom AutoNavi UCWeb Umeng Xiami DingTalk Alipay</p></li>
+            </ul>
+            <ul>
+                <li><p id="info3">Ⓒ 2009-2021 Copyright by Alibaba Cloud All rights reserved</p></li>
+            </ul>
+        </div>
+        <div id="acc"></div>
+    </section>
+    <script src="UAS_QAIS.js"></script>
+</body>
+</html>
